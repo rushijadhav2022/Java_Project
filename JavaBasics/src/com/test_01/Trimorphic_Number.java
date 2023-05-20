@@ -8,11 +8,10 @@ public class Trimorphic_Number {
 
 		int num = 5;
 		int num1 = num * num * num;
-		int count = 0;
-		int digit=0;
+		int digit = 0;
 		while (num1 > 0) {
-		 digit = num1 % 10;
-         System.out.println(digit);
+			digit = num1 % 10;
+			System.out.println(digit);
 			break;
 
 		}

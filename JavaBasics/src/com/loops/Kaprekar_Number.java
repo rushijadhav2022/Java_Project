@@ -1,17 +1,19 @@
 package com.loops;
-
+import java.util.Scanner;
 public class Kaprekar_Number {
 
 	public static void main(String[] args) {
-
-		int num = 45;
+ 
+		System.out.println("Enter Number");
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
 		int num1 = num * num;
 		int sum = 0;
 
 		while (num1 > 0) {
-			int digit = num1 % 100;
+			int digit = num1 % 10;
 			sum = sum + digit;
-			num1 = num1 / 100;
+			num1 = num1 / 10;
 		}
 
 		if (sum == num) {

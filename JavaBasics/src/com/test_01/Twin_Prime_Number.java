@@ -10,7 +10,7 @@ public class Twin_Prime_Number {
 		int count = 0;
 		int count1 = 0;
 		int i = 2;
-		int i1=2;
+		int i1 = 2;
 		char ch;
 		do {
 			System.out.println("Enter Number 1");
@@ -48,9 +48,10 @@ public class Twin_Prime_Number {
 			} else {
 
 				System.out.println("Not prime");
+				break;
 			}
 
-			if (num1 - num2 == 2) {
+			if (num1 - num2 == 2 || num1 - num2 == -2) {
 				System.out.println("Twin Prime");
 			} else {
 				System.out.println("Not twin prime");
