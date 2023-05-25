@@ -9,8 +9,9 @@ class Animals {
 }
 
 class Dogs extends Animals {
-
+    
 	public void show() {
+		
 		System.out.println("Dog is running");
 
 	}
@@ -28,7 +29,8 @@ public class DynamicDemo {
 
 	public static void main(String[] args) {
 
-		Animals a = new Dogs(); // Dynamic method dispatch
+		Animals a = new Dogs();
+		                                        // Dynamic method dispatch
 		a.show();
 
 	}
