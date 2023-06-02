@@ -10,7 +10,7 @@ class Balls {
 class Football extends Balls {
 	@Override
 	public void showProperty() {
-		super.showProperty();
+		//super.showProperty();
 		System.out.println("Its Football");
 
 	}
