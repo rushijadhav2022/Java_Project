@@ -14,18 +14,22 @@ public class ArraylistSort {
 		System.out.println(t);
 
 		for (int i = 0; i < t.size(); i++) {
-			Integer temp = t.get(i);
+
 			for (int j = t.size() - 1; j > i; j--) {
-				Integer temp1 = t.get(j);
-				if (temp > temp1) {
-					
-				   
-				
+
+				if (t.get(i) > t.get(j)) {
+
+					int temp = t.get(i);
+					t.set(i, t.get(j));
+					t.set(j, temp);
 
 				}
 
 			}
 
+		}
+		for (int i : t) {
+			System.out.println(i);
 		}
 
 	}
