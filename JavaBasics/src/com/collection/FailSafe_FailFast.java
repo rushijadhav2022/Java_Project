@@ -17,15 +17,15 @@ public class FailSafe_FailFast {
 
 		System.out.println(al);
 
-//		Iterator<String> i = al.iterator();
-//		while (i.hasNext()) {
-//			String s = i.next();
-//			if (s.equalsIgnoreCase("Goa")) {
-//				al.remove(s);                 // fail fast we cant perform multiple operations at same time because arraylist is synchronous
-//			}
-//		}
-//
-//		System.out.println(al);
+		Iterator<String> i = al.iterator();
+		while (i.hasNext()) {
+			String s = i.next();
+			if (s.equalsIgnoreCase("Goa")) {
+				al.remove(s);                 // fail fast we cant perform multiple operations at same time because arraylist is synchronous
+			}
+		}
+
+		System.out.println(al);
 		
 		System.out.println("==========================================================================");
 		

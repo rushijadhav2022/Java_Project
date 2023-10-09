@@ -15,7 +15,6 @@ public class ArraylistDemo {
 		arr.add(1);
 		arr.add(20.40);
 		arr.add(null);
-		
 
 		System.out.println(arr);
 
@@ -50,13 +49,31 @@ public class ArraylistDemo {
 			System.out.println(i1.previous());
 		}
 
-		arr.addAll(a);
-		System.out.println(arr);
-		System.out.println(arr.set(8, "Rushi"));
-		System.out.println(arr);
-		System.out.println(arr.isEmpty());
-		arr.remove("Rushikesh");
-		System.out.println(arr);
+		ArrayList a1 = new ArrayList();
+		a1.add("rj");
+		a1.add("vj");
+		a1.add("sj");
+
+		ListIterator i3 = a1.listIterator(a1.size());
+//		while(i3.hasNext())
+//		{
+//			i3.next();
+//		}
+//		i3.next();
+//		i3.next();
+//		i3.next();
+		System.out.println("-----------------");
+		while (i3.hasPrevious()) {
+			System.out.println(i3.previous());
+		}
+
+//		arr.addAll(a);
+//		System.out.println(arr);
+//		System.out.println(arr.set(8, "Rushi"));
+//		System.out.println(arr);
+//		System.out.println(arr.isEmpty());
+//		arr.remove("Rushikesh");
+//		System.out.println(arr);
 
 	}
 

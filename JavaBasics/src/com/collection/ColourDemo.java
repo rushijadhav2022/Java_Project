@@ -7,7 +7,7 @@ public class ColourDemo {
 
 	public static void main(String[] args) {
 
-		ArrayList<String> ar = new ArrayList();
+		ArrayList<String> ar = new ArrayList<>();
 		ar.add("red");
 		ar.add("black");
 		ar.add("blue");
@@ -38,7 +38,7 @@ public class ColourDemo {
 
 		}
 
-		Iterator i1 = ar.iterator();
+		Iterator<String> i1 = ar.iterator();
 		while (i1.hasNext()) {
 			System.out.print(i1.next() + " ");
 		}

@@ -1,6 +1,6 @@
 package com.customException;
 
-class BinaryNumberException extends Exception {
+class BinaryNumberException extends RuntimeException {
 
 	BinaryNumberException(String s) {
 		super(s);
@@ -11,7 +11,7 @@ class BinaryNumberException extends Exception {
 
 public class Checking_Num_Exception {
 
-	public void check(int num) throws BinaryNumberException {
+	public void check(int num) {
 		int flag = 0;
 
 		while (num > 0) {
@@ -39,10 +39,15 @@ public class Checking_Num_Exception {
 		Checking_Num_Exception c = new Checking_Num_Exception();
 
 		try {
-			c.check(111);
+			c.check(125);
 		} catch (BinaryNumberException e) {
 
 			e.printStackTrace();
+		}
+		
+		finally
+		{
+			System.out.println("runs ok");
 		}
 
 	}

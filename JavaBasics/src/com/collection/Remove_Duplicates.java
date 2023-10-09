@@ -6,13 +6,13 @@ import java.util.Iterator;
 public class Remove_Duplicates {
 
 	public static void main(String[] args) {
-		ArrayList<String> a = new ArrayList();
+		ArrayList<String> a = new ArrayList<>();
 		a.add("Rushi");
 		a.add("Jadhav");
 		a.add("Vita");
 		a.add("aitrc");
 		System.out.println(a);
-		ArrayList<String> a1 = new ArrayList();
+		ArrayList<String> a1 = new ArrayList<String>();
 		a1.add("Jadhav");
 		a1.add("Sashi");
 		a1.add("gtre");
@@ -28,7 +28,7 @@ public class Remove_Duplicates {
 			}
 		}
 
-		Iterator i = a.iterator();
+		Iterator<String> i = a.iterator();
 		while (i.hasNext()) {
 			System.out.println(i.next());
 		}

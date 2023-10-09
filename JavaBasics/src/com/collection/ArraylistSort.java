@@ -7,7 +7,7 @@ public class ArraylistSort {
 
 	public static void main(String[] args) {
 
-		ArrayList<Integer> t = new ArrayList();
+		ArrayList<Integer> t = new ArrayList<>();
 		t.add(5);
 		t.add(7);
 		t.add(4);
@@ -15,7 +15,7 @@ public class ArraylistSort {
 
 		for (int i = 0; i < t.size(); i++) {
 
-			for (int j = t.size() - 1; j > i; j--) {
+			for (int j = i + 1; j < t.size(); j++) {
 
 				if (t.get(i) > t.get(j)) {
 
@@ -26,10 +26,7 @@ public class ArraylistSort {
 				}
 
 			}
-
-		}
-		for (int i : t) {
-			System.out.println(i);
+			System.out.println(t.get(i));
 		}
 
 	}
